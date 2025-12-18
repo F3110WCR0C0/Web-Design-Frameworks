@@ -1,0 +1,457 @@
+@import "tailwindcss";
+
+@theme {
+
+  /* /////////////////////////////////////////////////////////////////////////// */
+  /* primary */
+  /* /////////////////////////////////////////////////////////////////////////// */
+
+  --color-primary-100: #f5ddcc;
+  --color-primary-200: #eabb99;
+  --color-primary-300: #e09a66;
+  --color-primary-400: #d57833;
+  --color-primary-500: #cb5600;
+  --color-primary-600: #a24500;
+  --color-primary-700: #7a3400;
+  --color-primary-800: #512200;
+  --color-primary-900: #291100;
+
+  /* /////////////////////////////////////////////////////////////////////////// */
+  /* secondary */
+  /* /////////////////////////////////////////////////////////////////////////// */
+
+  --color-secondary-100: #FFFFFF;
+  --color-secondary-200: #CCCCCC;
+  --color-secondary-300: #999999;
+  --color-secondary-400: #666666;
+  --color-secondary-500: #333333;
+  --color-secondary-600: #000000;
+}
+
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-primary-500 font-medium;
+  }
+
+  h3 {
+    @apply text-5xl font-bold text-black;
+  }
+
+  h4 {
+    @apply text-secondary-500 text-lg;
+  }
+
+  h5 {
+    @apply text-3xl font-bold text-black;
+  }
+
+  h6 {
+    @apply text-lg font-bold text-secondary-100;
+  }
+
+  p {
+    @apply text-secondary-500 text-base;
+  }
+}
+
+@layer components {
+
+  .button-1 {
+    @apply px-4 py-2 bg-primary-500 text-white rounded-lg shadow hover:text-primary-500 hover:bg-white;
+  }
+
+  .team-card {
+    @apply w-64 flex flex-col items-center gap-4;
+  }
+
+  .team-card-image {
+    @apply w-full h-72 rounded-xl border-2 border-primary-800;
+  }
+
+  .about-card {
+    @apply bg-primary-100 rounded-lg shadow-md p-4 flex flex-col gap-4 max-w-2xl;
+  }
+
+  .evidence-card {
+    @apply bg-secondary-100 rounded-lg shadow-md p-8 flex flex-col gap-4 w-96;
+  }
+
+  .evidence-small-card {
+    @apply bg-secondary-100 rounded-lg p-8 flex flex-col items-center gap-2.5 w-60;
+  }
+
+  .logo {
+    @apply w-16 h-16;
+  }
+
+  .black-orange {
+    @apply text-secondary-600 hover:text-primary-500;
+  }
+
+  .white-orange {
+    @apply text-secondary-100 hover:text-primary-500;
+  }
+
+  .icon {
+    @apply w-14 h-14 text-primary-500;
+  }
+
+  /* /////////////////////////////////////////////////////////////////////////// */
+  /* gap */
+  /* /////////////////////////////////////////////////////////////////////////// */
+
+  /* xy */
+
+  .gap-sm {
+    @apply gap-4;
+  }
+
+  .gap-md {
+    @apply gap-8;
+  }
+
+  .gap-lg {
+    @apply gap-12;
+  }
+
+  .gap-xl {
+    @apply gap-16;
+  }
+
+  .gap-2xl {
+    @apply gap-20;
+  }
+
+  .gap-3xl {
+    @apply gap-24;
+  }
+
+  .gap-4xl {
+    @apply gap-28;
+  }
+
+  .gap-5xl {
+    @apply gap-32;
+  }
+
+  .gap-6xl {
+    @apply gap-36;
+  }
+
+  /* y */
+
+  .gap-y-sm {
+    @apply gap-y-4;
+  }
+
+  .gap-y-md {
+    @apply gap-y-8;
+  }
+
+  .gap-y-lg {
+    @apply gap-y-12;
+  }
+
+  .gap-y-xl {
+    @apply gap-y-16;
+  }
+
+  .gap-y-2xl {
+    @apply gap-y-20;
+  }
+
+  .gap-y-3xl {
+    @apply gap-y-24;
+  }
+
+  .gap-y-4xl {
+    @apply gap-y-28;
+  }
+
+  .gap-y-5xl {
+    @apply gap-y-32;
+  }
+
+  .gap-y-6xl {
+    @apply gap-y-36;
+  }
+
+  /* x */
+
+  .gap-x-sm {
+    @apply gap-x-4;
+  }
+
+  .gap-x-md {
+    @apply gap-x-8;
+  }
+
+  .gap-x-lg {
+    @apply gap-x-12;
+  }
+
+  .gap-x-xl {
+    @apply gap-x-16;
+  }
+
+  .gap-x-2xl {
+    @apply gap-x-20;
+  }
+
+  .gap-x-3xl {
+    @apply gap-x-24;
+  }
+
+  .gap-x-4xl {
+    @apply gap-x-28;
+  }
+
+  .gap-x-5xl {
+    @apply gap-x-32;
+  }
+
+  .gap-x-6xl {
+    @apply gap-x-36;
+  }
+
+  /* /////////////////////////////////////////////////////////////////////////// */
+  /* padding */
+  /* /////////////////////////////////////////////////////////////////////////// */
+
+  /* xy */
+
+  .padding-sm {
+    @apply p-4;
+  }
+
+  .padding-md {
+    @apply p-8;
+  }
+
+  .padding-lg {
+    @apply p-12;
+  }
+
+  .padding-xl {
+    @apply p-16;
+  }
+
+  .padding-2xl {
+    @apply p-20;
+  }
+
+  .padding-3xl {
+    @apply p-24;
+  }
+
+  .padding-4xl {
+    @apply p-28;
+  }
+
+  .padding-5xl {
+    @apply p-32;
+  }
+
+  .padding-6xl {
+    @apply p-36;
+  }
+
+  /* y */
+
+  .padding-y-sm {
+    @apply py-4;
+  }
+
+  .padding-y-md {
+    @apply py-8;
+  }
+
+  .padding-y-lg {
+    @apply py-12;
+  }
+
+  .padding-y-xl {
+    @apply py-16;
+  }
+
+  .padding-y-2xl {
+    @apply py-20;
+  }
+
+  .padding-y-3xl {
+    @apply py-24;
+  }
+
+  .padding-y-4xl {
+    @apply py-28;
+  }
+
+  .padding-y-5xl {
+    @apply py-32;
+  }
+
+  .padding-y-6xl {
+    @apply py-36;
+  }
+
+  /* x */
+
+  .padding-x-sm {
+    @apply px-4;
+  }
+
+  .padding-x-md {
+    @apply px-8;
+  }
+
+  .padding-x-lg {
+    @apply px-12;
+  }
+
+  .padding-x-xl {
+    @apply px-16;
+  }
+
+  .padding-x-2xl {
+    @apply px-20;
+  }
+
+  .padding-x-3xl {
+    @apply px-24;
+  }
+
+  .padding-x-4xl {
+    @apply px-28;
+  }
+
+  .padding-x-5xl {
+    @apply px-32;
+  }
+
+  .padding-x-6xl {
+    @apply px-36;
+  }
+
+  /* /////////////////////////////////////////////////////////////////////////// */
+  /* margin */
+  /* /////////////////////////////////////////////////////////////////////////// */
+
+  /* xy */
+
+  .margin-sm {
+    @apply m-4;
+  }
+
+  .margin-md {
+    @apply m-8;
+  }
+
+  .margin-lg {
+    @apply m-12;
+  }
+
+  .margin-xl {
+    @apply m-16;
+  }
+
+  .margin-2xl {
+    @apply m-20;
+  }
+
+  .margin-3xl {
+    @apply m-24;
+  }
+
+  .margin-4xl {
+    @apply m-28;
+  }
+
+  .margin-5xl {
+    @apply m-32;
+  }
+
+  .margin-6xl {
+    @apply m-36;
+  }
+
+  /* y */
+
+  .margin-y-sm {
+    @apply my-4;
+  }
+
+  .margin-y-md {
+    @apply my-8;
+  }
+
+  .margin-y-lg {
+    @apply my-12;
+  }
+
+  .margin-y-xl {
+    @apply my-16;
+  }
+
+  .margin-y-2xl {
+    @apply my-20;
+  }
+
+  .margin-y-3xl {
+    @apply my-24;
+  }
+
+  .margin-y-4xl {
+    @apply my-28;
+  }
+
+  .margin-y-5xl {
+    @apply my-32;
+  }
+
+  .margin-y-6xl {
+    @apply my-36;
+  }
+
+  /* x */
+
+  .margin-x-sm {
+    @apply mx-4;
+  }
+
+  .margin-x-md {
+    @apply mx-8;
+  }
+
+  .margin-x-lg {
+    @apply mx-12;
+  }
+
+  .margin-x-xl {
+    @apply mx-16;
+  }
+
+  .margin-x-2xl {
+    @apply mx-20;
+  }
+
+  .margin-x-3xl {
+    @apply mx-24;
+  }
+
+  .margin-x-4xl {
+    @apply mx-28;
+  }
+
+  .margin-x-5xl {
+    @apply mx-32;
+  }
+
+  .margin-x-6xl {
+    @apply mx-36;
+  }
+}
